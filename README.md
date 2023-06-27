@@ -7,8 +7,5 @@ Aqui será encontrado os repositórios de atividades/exercícios que resolvi dur
 
 
 ```bash
-  Unix, Shell e Git
-  HTML e CSS
-  JavaScript
   React
 ```
