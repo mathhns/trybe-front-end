@@ -1,1 +1,0 @@
-# trybe-front-end
