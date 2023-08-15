@@ -3,6 +3,8 @@
 export function fillUsersSelect(users) {
   // Pega o select users-select
   const usersSelect = document.querySelector('#users-select');
+  // Limpa o conteúdo atual do users-select
+  usersSelect.innerHTML = '';
 
   // Faz uma iteração entre todos os itens do array
   users.map((user) => {
@@ -91,7 +93,7 @@ export function fillErrorMessage(errorMessage) {
   // Remove a classe que escondia o elemento
   errorMessageElement.classList.remove('invisible');
 
-  //Adiciona a mensagem de erro como texto do elemento
+  // Adiciona a mensagem de erro como texto do elemento
   errorMessageElement.innerText = errorMessage;
 }
 

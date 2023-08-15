@@ -4,11 +4,11 @@ import {
   fillFeaturedPostComments,
   clearPageData,
   fillErrorMessage,
-} from "./utils/updateUI";
+} from './utils/updateUI';
 
-const usersSelect = document.querySelector("#users-select");
+const usersSelect = document.querySelector('#users-select');
 
-const USERS_API = "https://dummyjson.com/users";
+const USERS_API = 'https://dummyjson.com/users';
 
 fetch(USERS_API)
   .then((res) => res.json())
@@ -18,7 +18,7 @@ fetch(USERS_API)
     fillUsersSelect(users);
   });
 
-usersSelect.addEventListener("change", () => {
+usersSelect.addEventListener('change', () => {
   clearPageData();
 
   const POSTS_API = `https://dummyjson.com/posts/user/${usersSelect.value}`;
@@ -42,7 +42,7 @@ usersSelect.addEventListener("change", () => {
       fillFeaturedPostComments(comments);
     })
     .catch((error) => {
-      fillErrorMessage("Error retrieving information");
+      fillErrorMessage('Error retrieving information');
       console.log(error.message);
     });
 });
