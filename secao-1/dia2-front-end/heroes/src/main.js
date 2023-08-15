@@ -17,6 +17,6 @@ button.addEventListener('click', (event) => {
       heroName.innerHTML = data.name;
     })
     .catch((err) => {
-      window.alert('Id do herói inválido, tente novamente', err);
-    })
+      window.alert(`O id do herói é inválido. Erro: ${err.message}`);
+    });
 });
