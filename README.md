@@ -8,4 +8,7 @@ Aqui será encontrado os repositórios de atividades/exercícios que resolvi dur
 
 ```bash
   React
+  TypeScript
+  TSX
+  JSX
 ```
